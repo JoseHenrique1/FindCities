@@ -117,3 +117,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.max-height-off-map {
+  max-height: calc(100vh - 193.6px);
+}
