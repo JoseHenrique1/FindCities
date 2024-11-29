@@ -1,18 +1,9 @@
 # Find-Cities
 
-<img src="imagem.png" alt="Exemplo imagem">
+<img src="./spa/src/assets/Find-Cities.png" alt="Exemplo imagem">
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> O Find-Cities mostra o mapa de um municipio brasileiro dentro do seu estado. Logo o usuário pode visualizar em que lugar fica sua cidade em relação ao estado. 
 
-
-
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-
-* Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
 
 ## 🚀 Instalando API 
 
