@@ -14,30 +14,27 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
 * Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando API 
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Na pasta ```/api```, siga estas etapas:
 
-Linux e macOS:
+1. Crie um arquivo .env com base no arquivo .env.example e preencha as informações.
+2. Abra o terminal e instale as dependencias com: ```npm i```
+
+## 🚀 Instalando SPA
+
+Na pasta ```/spa```, siga estas etapas:
+
+1. Abra o terminal e instale as dependencias com: ```npm i```
+
+
+## ☕ Usando Find-Cities
+
+Para usar o Find-Cities, siga estas etapas nas pastas /api e /spa:
+
 ```
-<comando_de_instalação>
+npm run dev
 ```
-
-Windows:
-```
-<comando_de_instalação>
-```
-
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
-
-```
-<exemplo_de_uso>
-```
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
-
 
 
 ## 🤝 Colaboradores
