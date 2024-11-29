@@ -2,6 +2,7 @@ import "dotenv/config"
 import express from "express"
 import cors from "cors"
 import { client } from "./config/client.js"
+await client.connect()
 
 const app = express()
 
@@ -9,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/svg/:estado/:municipio", async (req, res) => {
-   await client.connect()
+   
 
    const { estado, municipio } = req.params
    const pathEstado = await client.query('SELECT ST_AsSVG(geom) FROM estado WHERE nome ilike $1', [estado]);
