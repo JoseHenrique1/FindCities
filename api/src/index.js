@@ -14,8 +14,12 @@ app.get("/svg/:estado/:municipio", async (req, res) => {
 
    const { estado, municipio } = req.params
    const pathEstado = await client.query('SELECT ST_AsSVG(geom) FROM estado WHERE nome ilike $1', [estado]);
-   const pathMunicipio = await client.query('SELECT ST_AsSVG(geom) FROM municipio WHERE nome ilike $1', [municipio]);
+   const pathMunicipio = await client.query(`SELECT ST_AsSVG(m.geom) 
+    FROM municipio m
+    JOIN estado e ON ST_Contains(e.geom, m.geom)
+    WHERE m.nome ILIKE $1 AND e.nome ILIKE $2`, [municipio, estado]);
    const viewBox = await client.query('SELECT getViewBox($1)', [estado]);
+   
 
    res.json({
       pathestado: pathEstado.rows[0].st_assvg,
